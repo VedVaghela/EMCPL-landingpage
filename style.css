@@ -148,11 +148,13 @@ ion-icon {
     cursor: pointer;
     outline: none;
     border-radius: 30px;
+    
 }
 
 .button:hover{
     background-color: #fff;
-    color: black
+    color: black;
+    transition: all .35s ease-out;
 }
 
 .hover-left .split.left .text {
