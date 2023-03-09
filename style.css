@@ -114,6 +114,7 @@ ion-icon {
 .text .subtitle {
     width: 100%;
     font-size: 20px;
+    /* font-size: 20%; */
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 2px;
@@ -121,6 +122,7 @@ ion-icon {
 
 .text .maintitle {
     font-size: 55px;
+    /* font-size: 100%; */
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
@@ -138,10 +140,10 @@ ion-icon {
     margin: 10px 0 30px 0;
     width: 300px;
 }
-.listitem{
+/* .listitem{
     list-style: inside;
     padding-left: 30px;
-}
+} */
 .text .button {
     font-size: 15px;
     color: #fff;
@@ -183,4 +185,115 @@ ion-icon {
 .trainlink, .trainlink:visited, .trainlink:active{
     color: inherit;
     text-decoration: none;
+}
+
+@media screen and (max-width: 500px){
+
+    .split {
+        height: 50%;
+        width: 100%;
+    }
+    
+    .split.right{
+        bottom: 0;
+    }
+
+    .split.left{
+        top:0;
+    }
+
+    .hover-left .split.left .text {
+        transform: translate(-50%, -60%);
+    }
+    .hover-left .split.right .text {
+        transform: translate(-50%, -40%);
+    }
+    .hover-right .split.right .text {
+        transform: translate(-50%,-60%);
+    }
+    .hover-right .split.left .text {
+        transform: translate(-50%,-60%);
+    }
+    
+    .hover-left .split.left {
+        height: 60%; 
+        width: 100%;
+    }
+    .hover-left .split.right {
+        height: 40%;
+        width: 100%;
+    }
+    
+    .hover-right .split.right {
+        height: 60%;
+        width: 100%; 
+    }
+    .hover-right .split.left {
+       height: 40%; 
+       width: 100%;
+    }
+    .services {
+        width: 55%;
+        position: absolute;
+        top: 75%;
+        left: 70%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .training {
+        width: 55%;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .text{
+        left:50%;
+    }
+
+    .text .subtitle {
+        width: 100%;
+        font-size: 9px;
+        /* font-size: 20%; */
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 2px;
+    }
+    
+    .text .maintitle {
+        font-size: 35px;
+        /* font-size: 100%; */
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: 'Fredoka One', cursive;
+        line-height: 1;
+        letter-spacing: 5px;
+        margin-top: 10px;
+    }
+    
+    .text .descr {
+        font-size: 8px;
+        color: #fff;
+        font-weight: 300;
+        line-height: 2;
+        margin: 10px 0 30px 0;
+        width: 300px;
+    }
+   
+    .text .button {
+        font-size: 10px;
+        color: #fff;
+        background: transparent;
+        border: #fff solid 2px;
+        padding: 5px 10px;
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 1px;
+        cursor: pointer;
+        outline: none;
+        border-radius: 10px;
+        
+    }
 }
